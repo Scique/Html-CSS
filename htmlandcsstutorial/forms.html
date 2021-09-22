@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms example</title>
+</head>
+<body>
+    <h1>Forms examples</h1> <br>
+
+    <!-- Forms -->
+    <h4>Forms example</h4>
+    <form action = "" method = ""><!-- Left blank for now -->
+        <label for="Name">Name:</label><br>
+        <input type="text" name="name" id="name" placeholder="name">
+        <br>
+        <label for="Password">Password:</label> <br>
+        <input type="password" name="password" placeholder="password">
+        <br>
+        <label for="Email">Email: <br></label>
+        <input type="email" name="email" id="email" placeholder="email@email.com">
+        <br>
+        <label for="Hard coding values">Values parameter = Pre entering a value into the textfield<br></label>
+        <input type="text" name="HardCode" value="You can remove this value">
+        <br>
+        <label for="Text area">Paragraph text area:</label><br>
+        <textarea name="Description paragraph" id="" cols="20" rows="10" placeholder="LOng Paragraph wow"></textarea>
+        <br>
+        <label for="Favorite coding language">Favorite coding language: <br></label>
+        <input type="radio" name="favcodinglanguage" id="" value="Java">Java
+        <input type="radio" name="favcodinglanguage" id="" value="C#">C#
+        <input type="radio" name="favcodinglanguage" id="" value="Python">Python
+        <input type="radio" name="favcodinglanguage" id="" value="C++">C++
+        <input type="radio" name="favcodinglanguage" id="" value="C">C
+        <input type="radio" name="favcodinglanguage" id="" value="JavaScript">JavaScript
+        <input type="radio" name="favcodinglanguage" id="" value="Binary">Binary 
+        <br>
+        <label for="Which Coding Languages You Know:">Coding Languages(That you have learnt before): <br></label>
+        <input type="checkbox" name="languagesknown" checked id="" value="Java">Java <!-- The Checked attribute makes it checked by default -->
+        <input type="checkbox" name="languagesknown" id="" value="C#">C#  
+        <input type="checkbox" name="languagesknown" id="" value="Python">Python
+        <input type="checkbox" name="languagesknown" id="" value="C++">C++
+        <input type="checkbox" name="languagesknown" id="" value="C">C
+        <input type="checkbox" name="languagesknown" id="" value="JavaScript">JavaScript
+        <input type="checkbox" name="languagesknown" id="" value="Binary">Binary
+        <br>
+        <label for="Languages you know">Languages Known(In Real Life)</label> <br>
+        <select name="languages" id="">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit all">
+    </form>
+
+    <br> <br>
+    <p>Some text here</p>
+    <a href="#top">Back to the top <br></a> <!-- Putting the hastag will try and find the tag for top(which is the tag of the title and is at the top of the page)-->
+    <a href="index.html">Back to the homepage <br></a>
+</body>
+</html>
