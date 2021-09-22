@@ -1,5 +1,5 @@
 # Html-CSS-JS
-A repository for storing my Html, CSS and JavaScript notes/examples that I have learned from the Tutorial.
+Html, CSS, and JavaScript Eagle Award notes/examples.
 
 Hi, this is my folder which I have taken all the notes/examples from the coding tutorials which I have learnt from. 
 Here is the link to the first tutorial that I am learning: https://www.youtube.com/watch?v=mU6anWqZJcc&t=13189s
