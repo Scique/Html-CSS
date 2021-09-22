@@ -1,0 +1,1 @@
+This is a project which the tutorial had us do. If you look at the website(not as code but in your browser) it would look like a website for a coffee shop. I won't have any notes that I have took in here since this is a project.
