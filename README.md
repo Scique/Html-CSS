@@ -7,7 +7,7 @@ I might complete my 10 hours without being able to acheive my goal since only th
 
 Notice: The code has comments and code examples so they will be my evidence and notes. Github is not able to run this code but if you happen to have an IDE on your computer and it is able to run this code, feel free to download it and see what the website looks like.
 
-To access my code, please click on the "htmlandcsstutorial" folder. All the files and folders in there contain all of the notes and code examples that I have written down and you can see them just by clicking on any individual file and it will open.
+To access my code, please click on the "htmlandcsstutorial" folder. All the files and folders in there contain all of the notes and code examples that I have written down and you can see them just by clicking on any individual file and it will open. Also, keep in mind that the images folder are images for examples in the code of how I can display images in it.
 
 Log:
 
