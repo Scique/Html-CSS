@@ -1,4 +1,5 @@
 /* Reminder: CSS comments have to be done like this */
+/* Id Selectors */
 #externalcss{
     color:darkgoldenrod;
     font-size: large;
@@ -13,7 +14,7 @@
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: x-large;
 }
-/* You can group them together */
+/* They can be grouped together too */
 h2, h3{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -21,3 +22,22 @@ h2, h3{
 /* Selectors (h1), Declaration bracket ({) */
     /* Property: value(color: blue) */
 /* Closing bracket(}) */
+
+
+/* Class Selectors */
+/* Class selectors use the . instead of the # */
+.green{
+    color: green
+}
+.red{
+    color:red
+}
+
+
+/* Div and Span elements */
+div{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+span{
+    text-transform: uppercase;
+}
