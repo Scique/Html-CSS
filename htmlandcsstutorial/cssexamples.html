@@ -8,8 +8,10 @@
     <!-- Internal CSS example -->
     <style>
         /* Reminder: CSS comments have to be done like this */
-        h1{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: x-large;
+
+        /* This is the universal selector example(refer to universal selector heading to see what it is) */
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         #word1, #word2{
             color: blue;
@@ -80,8 +82,25 @@
     </div>
     <h3>Span example</h3>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam neque odio, omnis perspiciatis repellat commodi consectetur. Libero cumque cum et eaque officiis, velit iusto. Magni temporibus laboriosam voluptas voluptatem numquam dicta aspernatur eos unde sequi veritatis magnam repudiandae ea iste consectetur reiciendis hic architecto, praesentium maxime blanditiis commodi? <span>hi im uppercase</span> Doloribus, quod iure sint voluptas et ab, molestias, qui dignissimos doloremque delectus ipsum impedit cupiditate obcaecati. Dolorem perferendis optio sint unde nihil aliquid, repudiandae recusandae? <span class = "red">This sentence is red and uppercase</span> Autem modi dignissimos minus similique ex quae asperiores, qui nulla id perspiciatis delectus vitae assumenda ab totam reiciendis exercitationem quia ad doloremque! Quos hic sint consequatur repellendus.</p>
+    <br><br>
+
+    <!-- Universal Selector(*) -->
+    <!-- This sign is used for styling in css and will style everything in your document. Meaning that if you put this into your styles.css file and give it the color red, all the red inside your website will turn red. -->
+    <!-- The Universal Selector can be easily overrided when you, for example assign the color red to h3 since that is more specific(the rules of specificity and inheritance in CSS) -->
+    <!-- This is the default selector of everything -->
+    <h1>Universal Selector Example</h1>
+    <h3>Lorem</h3>
+    <h4>ipsum</h4>
+    <p>test</p>
+    <a href="">test2</a>
+    <p>The universal selector makes everything(in this case the font) the same since it's universal.</p>
+    <!-- If you look in the website, you can see that that the universal selector has made the font of almost all the text in this website a specific font -->
+
+
+
    
-        <!-- Directory -->
+    <!-- Directory -->
+    <br><br>
     <h1>Directory</h1>
     <a href="index.html">Back to homepage</a> <br>
     <a href="#top">Back to top</a>
