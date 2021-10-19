@@ -100,10 +100,47 @@
 
     <!-- Color and background Properties -->
     <h1>Color Properties and background example</h1>
-    <p style="color:lightslategrey;">Lights late grey text color example</p>
-    <p style="background-color: chocolate;">Chocolate Background color example</p>
+    <p style="color:lightslategrey;">Normal text color example</p>
+    <p style="background-color: chocolate;">Background color example</p> <!-- You can set a photo as the background too but that will come later -->
+    <p style="color: rgb(255,0,0);">RGB colorway example</p> <!-- This is just plain old RGB colorways -->
+    <p style="color: rgba(0,0,0,1); background-color: rgba(0, 100, 256, 0.5);">RGBA colorway example</p> 
+    <!-- Pretty much the same as RGB except there's an extra opacity option called alpha(it has a value from 0 to 1)-->
+    <br>
+    <!-- Hex color values -->
+    <h3>Hex colorway examples</h3>
+    <ul>
+        <!-- In the place where you'd normally put the color, just put the hex code in and the color will show up (Also, #000 is an emmet abbreviation for black) -->
+        <!-- VSCode also allows you to be able to see what color it is and change the colors by looking. It also allows you to change the colorway. ALl you have to do is hover over it. -->
+        <li style="color: #000000;">Black</li>
+        <li style="color: #00FF00;">Green</li>
+        <li style="color: #0000ff;">Blue</li>
+        <li style="color: #f15025;">Red</li>
+        <li style="color: #ffffff; background-color: #000;">White</li>
+    </ul>
+   <br><br>
 
-   
+   <!-- CSS units -->
+   <h1>CSS Units</h1>
+   <ol>
+       <li>Pixels - Broadly speaking, it's one of the dots/lights on your screen.
+        <!-- How big a pixel is for you also depends on the size of the pixels on your screen. Not gonna depend on parent element, or root elements, etc -->
+            <ul>
+                <li style="font-size: 30px;">Pixel font size example - 30px</li>
+                <li style="font-size: 10px;">Pixel font size example - 10px</li>
+            </ul>
+       </li>
+       <li>Percentage - The size of them is relative to the size of the parent element
+            <ul>
+                <div style="font-size: 50px;">
+                    <li style="font-size: 50%;">Percentage font size example - 50%(relative to the parent element font size: 50px)</li>
+                    <li style="font-size: 25%;">Percentage font size example - 25%(relative to the parent element font size: 50px)</li>
+                    <li style="font-size: 40%;">Percentage font size example - 40%</li>
+                </div>
+            </ul>
+       </li>
+   </ol>
+
+
     <!-- Directory -->
     <br><br>
     <h1>Directory</h1>
