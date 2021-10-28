@@ -30,6 +30,9 @@
 
     <!-- Linking the external CSS styles file to this document example -->
     <link rel="stylesheet" href="CSS/style.css">
+
+	<!-- Link to Google fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Qahiri&family=Zen+Antique&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 style="font-size: xx-large;">CSS Examples</h1>
@@ -116,20 +119,22 @@
         <li style="color: #0000ff;">Blue</li>
         <li style="color: #f15025;">Red</li>
         <li style="color: #ffffff; background-color: #000;">White</li>
+        <li style="background-color: aqua; width: fit-content; padding: 0.5%;">Cool background thingy wowow</li>
+        <li style="background-color:burlywood; width: fit-content; padding: 0.75%; border-radius: 20%;">Circle background wow</li>
     </ul>
    <br><br>
 
    <!-- CSS units -->
    <h1>CSS Units</h1>
    <ol>
-       <li>Pixels - Broadly speaking, it's one of the dots/lights on your screen.
+       <li><strong>Pixels - Broadly speaking, it's one of the dots/lights on your screen. </strong>
         <!-- How big a pixel is for you also depends on the size of the pixels on your screen. Not gonna depend on parent element, or root elements, etc -->
             <ul>
                 <li style="font-size: 30px;">Pixel font size example - 30px</li>
                 <li style="font-size: 10px;">Pixel font size example - 10px</li>
             </ul>
        </li>
-       <li>Percentage - The size of them is relative to the size of the parent element
+       <li><strong>Percentage - The size of them is relative to the size of the parent element</strong>
             <ul>
                 <div style="font-size: 50px;">
                     <li style="font-size: 50%;">Percentage font size example - 50%(relative to the parent element font size: 50px)</li>
@@ -138,7 +143,56 @@
                 </div>
             </ul>
        </li>
+       <li><strong>EM/REM(relative values) - The size of them is also relative to the browser's font size</strong>
+            <ul>
+                <li style="font-size: 1em;">EM/REM font example - 1em</li>
+                <li style="font-size: 1rem;">EM/REM font example - 1rem</li>
+                <li>EM and REM are almost the same thing - the difference is that REM will only be relative to the browser font size but EM is also relative to it's parent element.</li>
+                <li>Observe that if you change the zoom of your browser, the em text will become bigger, but the other fonts will stay the same size.</li>
+            </ul>
+        </li>
+        <li><strong>VH and VW(view height and view width) - The size of the font will be relative to the size of your screen(not browser font)</strong>
+            <ul>
+                <li style="background-color: red; width: 10vw; height: 10vh;"></li>
+                <li>10vw, 10vh - means you are getting 10% of the screen width and height</li>
+                <li style="background-color: green; width: 20vw; height: 20vh;"></li>
+                <li>20vw, 20vh - this shape is occupying 20% of the screen's width and height</li>
+                <li><strong>This will change depending on the size of your screen's dimensions(you can try it out by resizing your window)</strong></li>
+            </ul>
+        </li>
    </ol>
+   <br><br>
+
+   <h1>Using Google Fonts</h1>
+   		<p>Using the Google fonts website, you can go there and get their unique fonts to put it into your code. Google form basically tells you how to do it.</p>
+		<p style="font-family: 'Zen Antique', sans-serif;">Zen Antique font</p>
+		<p style="font-family: 'Qahiri', serif; font-size: 30px;">Qahiri font test</p>
+   	<br><br>
+
+   	<h1>Text Align - Control the alignment of the text</h1>
+   		<p style="text-align: left;">Left align</p>
+		<p style="text-align: center;">Center align</p>
+		<p style="text-align: end;">End align</p>
+   	<br><br>
+	
+	<h1>Line Spacing(called line height in code) - The space between each line</h1>
+   		<p>5px line spacing:</p>
+		<p style="line-height: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor debitis aliquam voluptatibus ad officiis quae eaque, totam quam ullam voluptatum, sed architecto inventore consectetur qui magni, vitae corrupti eos. Deleniti aliquid ut nam in voluptatibus eligendi corrupti quos veritatis doloremque quas modi dolores, vitae praesentium saepe animi obcaecati facere sed.</p>
+		<p>15px line spacing:</p>
+		<p style="line-height: 15px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas velit quae repellendus consectetur eum beatae, autem quo rerum adipisci atque reiciendis delectus perspiciatis ducimus quisquam eveniet, tempore tempora iusto quia esse enim corporis. Quis voluptates laboriosam quia iure? Possimus consequatur quibusdam facere fugit illum error nulla suscipit, nam dolores odio?</p>
+   	<br><br>
+
+	<h1>Letter spacing - The space between each letter</h1>
+   		<p>5px letter spacing</p>
+		<p style="letter-spacing: 5px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aperiam, velit esse dicta non rem possimus quo, accusamus temporibus reiciendis vel quibusdam in itaque fugiat laboriosam quaerat? Harum, voluptatum perferendis excepturi vel repellat, natus amet quae cupiditate sed corporis, laboriosam quis illo! Quae deserunt sint cum natus libero at odio.</p>
+	<br><br>
+
+	<h1>Word Spacing - The space between each word</h1>
+   		<p>20px word spacing</p>
+		<p style="word-spacing: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cupiditate necessitatibus rem eligendi nisi error. Facere nostrum excepturi repellendus ipsum obcaecati magni eligendi, molestias, dolor reiciendis eum pariatur corporis nobis ut! Accusamus numquam ipsam accusantium voluptates necessitatibus unde minus quis ratione nihil aliquam dolor eius hic, similique veritatis odio possimus.</p>
+   	<br><br>
+
+	<h1>Text transform</h1>
 
 
     <!-- Directory -->
