@@ -29,6 +29,20 @@
         #textdec{
             text-decoration: underline;
         }
+        #bologna{
+            background: url('./Images/Bologna\ Catlowressmallimage.jpg');
+            font-size: 30px; 
+            height: 400px;
+        }
+        #backgroundattachment{
+            color: white;
+            font-size: 20px;
+            height: 300px;
+            background: url(./Images/windows10backgroundimage.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     </style>
 
     <!-- Linking the external CSS styles file to this document example -->
@@ -210,12 +224,36 @@
     <p id="textdec" style="text-decoration: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, odio.</p>
    <br><br>
    
-   <h1>CSS Box Model</h1>
+   <h1>Background Images</h1>
+   <p style="background: url('./Images/colors.jpg'); font-size: 30px; height: 400px;">This is an example of a background image</p>
+   <p>Smaller pictures repeat by default but you can turn that off</p>
+   <p id="bologna">Low Resolution small picture example</p>
+    <p id="bologna" style="height: fit-content; background-repeat:no-repeat;">If you set it to no repeat, it still looks bad</p>
+    <p id="bologna" style="background-size: cover;">You can also use the background size to change the size of it to fit your text but it'll still look very bad</p>
+    <p id="bologna" style="background-position: center; background-size: cover;">You can also try to center the background(This is technically the center of the picture)</p>
+
+    <h1>Background Attachments - Cool background animations</h1>
+    <p id="backgroundattachment" style="background-attachment: scroll;">Background attachments - scroll(with the page)</p>
+    <p id="backgroundattachment" style="background-attachment: fixed;">Background Attachments - fixed(will stay with the background)</p>
+   <br><br>
+
+   <h1>Linear Gradients - used in correlation with the background colors and images</h1>
+   <p>Example of Linear Gradient red to green</p>
+   <div style="height: 100px; background: linear-gradient(red, Green);"></div>
+   <p style="font-weight: bold;">Linear Gradient can also have another attribute which is which direction is it going(can be from top to bottom, left to right, vice versa.</p>
+   <div style="height: 100px; background: linear-gradient(to top, red, green);"></div>
+   <br>
+   <div style="height: 100px; background: linear-gradient(to left, yellow, black);"></div>
+   <br>
+   <div style="height: 100px; background: linear-gradient(to right, yellow, black);"></div>
+   <p id="backgroundattachment" style="height:400px ;background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./Images/windows10backgroundimage.png)center/cover no-repeat fixed;">Linear Gradient can also be used to make text on pictures easier to see by darkening the gradient</p>
+   <br><br><br><br>
 
     <!-- Directory -->
     <br><br>
     <h1>Directory</h1>
     <a href="index.html">Back to homepage</a> <br>
     <a href="#top">Back to top</a>
+    <br><br><br>
 </body>
 </html>

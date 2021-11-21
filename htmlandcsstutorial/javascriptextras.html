@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list project</title>
+    <style>
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To-do list</h1>
+    <div>
+        <!-- Adding stuff -->
+        <label for="textbo">New item:</label>
+        <input type="text" id="textbo">
+        <button id="add">add</button>
+        <button id="reset">reset</button>
+        <br>
+
+        <!-- Searching -->
+        <label for="search">Search:</label>
+        <input id="search" type="search">
+        <button id="searchbutton">Search</button>
+        <button id="cancelbutton">Cancel</button>
+    </div>
+
+    <br> <br>
+    <p>Directory</p>
+    <a href="#top">Back to the top <br></a>
+    <!-- Putting the hastag will try and find the tag for top(which is the tag of the title and is at the top of the page)-->
+    <a href="index.html">Back to the homepage <br></a>
+</body>
+<script>
+    let input = document.getElementById("textbo")
+    let button = document.getElementById("add")
+    let itemlist = document.getElementById("items")
+    let resetButton = document.getElementById("reset")
+
+    let searchBar = document.getElementById("search")
+    let searchButton = document.getElementById("searchbutton")
+    let cancelButton = document.getElementById("cancelbutton")
+
+    button.onclick = function () {
+        let stuff = input.value
+        let listitem = document.createElement("li")
+        let itemContent = document.createElement("p")
+        itemContent.textContent = stuff
+        let removeButton = document.createElement("button")
+        removeButton.textContent = "delet"
+        removeButton.onclick = function () {
+            itemlist.removeChild(listitem)
+        }
+
+        itemlist.appendChild(listitem)
+        listitem.appendChild(itemContent)
+        listitem.appendChild(removeButton)
+    }
+
+    searchButton.onclick = function () {
+        text = searchBar.value
+
+        for (let i = 0; i < itemlist.childNodes.length; i++) {
+            if (itemlist.childNodes[i].getElementsByTagName("p")[0].textContent != text) {
+                itemlist.childNodes[i].style.display = "none"
+            }
+            else {
+                console.log("no work")
+            }
+        }
+    }
+
+    cancelButton.onclick = function () {
+        for (let i = 0; i < itemlist.childNodes.length; i++) {
+            itemlist.childNodes[i].style.display = "block"
+        }
+    }
+
+    // Reset function
+    resetButton.onclick = function () {
+        for (let i = itemlist.childNodes.length - 1; i >= 0; i--) {
+            itemlist.removeChild(itemlist.childNodes[i])
+        }
+    }
+
+</script>
+</html>
